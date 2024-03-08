@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Silkscreen:wght@400;700&display=swap');
+/* font-family: "Madimi One", sans-serif;
+font-family: "Silkscreen", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+  }
+body {
+    background-image: url("https://4kwallpapers.com/images/wallpapers/moon-planet-8k-1920x1080-87.jpg");
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.container{
+    width: 70%;
+    height: 80vh;
+    background-color: rgba(255, 255, 255, 0.409);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    border-radius: 15px;
+    flex-direction: column;
+}
+.text{
+ width: 100%;
+ height: 60%;
+
+ text-align: center;
+
+ background-color: rgba(0, 255, 255, 0);
+ padding-top: 15px;
+ font-family: "Madimi One", sans-serif;
+}
+.p1{
+    font-size: 30px;
+    margin-top: 40px;
+}
+p{
+    font-size: 20px;  
+}
+.buts{
+  width: 100%; 
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: rgba(255, 228, 196, 0);
+}
+.butt{
+    width: 10%;
+    height: 20%;
+    color: black;
+    
+    box-shadow: 0px 5px 1px 1px black;
+    transition: all 0.3s ease;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 17px;
+}
+.butt:hover{
+    box-shadow: 0px 2px 1px 1px black; 
+    margin-top: 3px;
+}

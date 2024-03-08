@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>About Page</title>
+  <script>
+    function fetchData() {
+      fetch('/api/data')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('data').innerText = data.message;
+          document.getElementById('editableData').value = data.message;
+        });
+    }
+
+    function updateData() {
+      const updatedData = document.getElementById('editableData').value;
+      fetch('/api/data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: updatedData })
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log(data.message);
+          fetchData(); // Обновление данных на странице после обновления на сервере
+        });
+    }
+  </script>
+</head>
+<body onload="fetchData()">
+  <h1>About Page</h1>
+  <div id="data">Загрузка данных...</div>
+  <textarea id="editableData"></textarea>
+  <button onclick="updateData()">Обновить данные</button>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Page</title>
+  <link rel="stylesheet" href="css/style4.css">
+</head>
+<body onload="fetchData()">
+  <div class="container">
+    <div class="text">
+      <h1>The Secret Page</h1>
+      <textarea id="editableData" class="p1">You can change text here!</textarea>
+      <div id="data">Загрузка данных...</div>
+    </div>
+    <div class="buts">
+      <button class="butt" onclick="redirect0()">main</button>
+      <button class="butt" onclick="redirect1()">Page 1</button>
+      <button class="butt" onclick="redirect2()">Page 2</button>
+      <button class="butt" onclick="redirect4()">Page 3</button>
+      <button class="butt" onclick="redirect5()">404</button>
+      <button class="button" onclick="updateData()">Update JSON</button>
+      <button class="button" onclick="checkData()">Wiew JSON</button>
+    </div>
+  </div>
+
+  <script src="js/js4.js"></script>
+</body>
+</html>
+
